@@ -15,7 +15,7 @@ const demoGalaxyData = {
   // images: ["./image/1.jpg", "./image/2.jpg", "./image/3.jpg", "./image/4.jpg"],
   song: "music.mp3",
   isHeart: true,
-  textHeart: "Love Ngọc Giao",
+  textHeart: "Happy Birthday Trần Thị Kim Xuyến",
   isSave: true,
   createdAt: "2025-05-30T00:00:00.000Z",
 };
