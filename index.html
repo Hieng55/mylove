@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <!-- <meta property="og:image" content="https://raw.githubusercontent.com/Hieng55/OpenGraphImage/refs/heads/main/QR-1.png" /> -->
-    <title>Happy Birthday Trần Thị Kim Xuyến</title>
+    <meta property="og:image" content="https://raw.githubusercontent.com/Hieng55/OpenGraphImage/refs/heads/main/QR-1.png" />
+    `
+    <title>DearLove - Dành tặng cho bé iu của anh</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 
     <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="💕 Chúc mừng sinh nhật" />
+    <meta property="og:title" content="💕 Tin Nhắn Dành Cho Bạn - DearLove" />
+    <meta property="og:description" content="bạn là người rất đặc biệt khi được nhận tin này đấy :>. Chúc bạn luôn hạnh phúc nhé!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="DearLove" />
@@ -41,12 +43,32 @@
       <div class="heart-text" id="heartText"></div>
     </div>
     <!-- Audio -->
-    <audio id="galaxyAudio" style="display: none" controls autoplay loop>
+    <audio id="galaxyAudio" autoplay controls loop style="display: none">
       <source src="music.mp3" type="audio/mp3" />
     </audio>
-
+    <style>
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* Trong suốt */
+        z-index: 9999;
+        cursor: pointer;
+      }
+    </style>
+    <div id="overlay"></div>
     <script type="module" src="index.js"></script>
+    <script>
+      const overlay = document.getElementById("overlay");
+      const audio = document.getElementById("galaxyAudio");
 
+      overlay.addEventListener("click", function () {
+        audio.play();
+        overlay.remove();
+      });
+    </script>
     <!-- Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTY3RQNXTE"></script>
     <script>
